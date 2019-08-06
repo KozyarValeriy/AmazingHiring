@@ -1,5 +1,5 @@
 SELECT 
-	COUNT(DISTINCT email) as gmail
+    COUNT(DISTINCT email) as gmail
 FROM 
-	users 
+    users 
 WHERE email LIKE '%@gmail.com';
