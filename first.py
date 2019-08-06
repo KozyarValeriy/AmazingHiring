@@ -19,6 +19,8 @@ class TestMapping(unittest.TestCase):
         self.assertEqual(mapping(['no'], False), None)
         self.assertEqual(mapping(None, False), ['any'])
         self.assertEqual(mapping(['no', 'phone'], False), ['no', 'phone'])
+        self.assertEqual(mapping(['phone'], False), ['phone'])
+
 
 if __name__ == '__main__':
     unittest.main()
