@@ -4,12 +4,13 @@ def mapping(values, param: bool):
     ''' Function by table '''
     assert isinstance(values, list) or values is None, \
             'List or None required, received ' + str(type(values))
+    #if param or (values and len(values) > 1):
     if param:
         return values
     # Next for all 'param' is False
     if not values:
         return ['any']
-   if len(values) > 1:
+    if len(values) > 1:
         return values
 
 class TestMapping(unittest.TestCase):
