@@ -9,9 +9,8 @@ def mapping(values, param: bool):
     # Next for all 'param' is False
     if not values:
         return ['any']
-    for value in values:
-        if value != 'no':
-            return values
+   if len(values) > 1:
+        return values
 
 class TestMapping(unittest.TestCase):
     def test_result(self):
