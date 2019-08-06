@@ -10,7 +10,7 @@ def mapping(values, param: bool):
     # Next for all 'param' is False
     if not values:
         return ['any']
-    if len(values) > 1:
+    if 'no' not in values or len(values) > 1:
         return values
 
 class TestMapping(unittest.TestCase):
